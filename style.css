@@ -166,6 +166,10 @@ section#partners {
     display: flex;
     flex-flow: row nowrap;
 }
+footer > section {
+    background: #484848;
+    color: var(--white);
+}
 /* Service page specific style go here */
 /* mobile/small screens */
 
