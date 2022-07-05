@@ -92,10 +92,11 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-weight: 600;
+    margin-bottom: 16px;
 }
 p {
     font-family: var(--site-font);
-    font-size: 18px;
+    font-size: 17.5px;
     letter-spacing: 1%;
     line-height: 1.9;
     text-align: center;
@@ -104,6 +105,26 @@ p {
 }
 section#mission {
     padding: 5.5% 12%;
+}
+section#about {
+    background: #F5F5F5;
+    padding: 0 10% 0 11.3%;
+    height: calc(100vh - 72px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7.8%;
+}
+section#about img {
+    width: 375px;
+    height: auto;
+}
+section#about h2, section#about p {
+    text-align: left;
+}
+section#our-services {
+    padding: 6.8% 11%;
 }
 /* Service page specific style go here */
 /* mobile/small screens */
