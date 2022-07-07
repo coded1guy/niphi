@@ -36,7 +36,7 @@ a {
 
 /* HEADER STYLES */
 header {
-    height: calc(100vh - 20px);
+    height: calc(45vw + 80px);
 }
 /* HEADER - NAVBAR */
 nav {
@@ -73,6 +73,7 @@ nav > ul > li {
 nav > ul hr.nav-bottom-bar {
     display: none;
     width: 100%;
+    background: #E7A704;
     border: 2px solid #E7A704;
     position: absolute;
     bottom: 0;
@@ -110,7 +111,7 @@ nav > ul > li.nav-active > a, nav > ul > li > a:hover {
     }
     @media screen and (max-width:650px) {
         nav {
-            height: 60px;
+            height: 70px;
         }
         nav > ul {
             display: none;
@@ -119,7 +120,7 @@ nav > ul > li.nav-active > a, nav > ul > li > a:hover {
 }
 /* HEADER - CAROUSEL SECTION */
 section#carousel {
-    height: calc(100% - 70px);
+    height: 45vw;
     position: relative;
     display: flex;
     justify-content: center;
@@ -155,14 +156,28 @@ section#carousel > h1 {
     position: absolute;
     font-family: var(--site-font);
     color: var(--white);
-    font-size: 6.4vw;
-    line-height: 1.1;
+    font-size: 6.3vw;
+    line-height: 1.2;
     text-align: center;
     letter-spacing: 2px;
     z-index: 999;
     top: 30%;
     color: #FFAA33;
-    margin: 0 10%;
+    width: 65vw;
+    border: 1px solid red;
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: calc(50vw + 80px);
+    }
+    section#carousel {
+        height: calc(50vw + 20px);
+    }
+    @media screen and (max-width:650px) {
+        section#carousel {
+            height: calc(45vw + 10px);
+        }
+    }
 }
 h2 {
     color: var(--black);
@@ -407,3 +422,19 @@ footer > section {
         color: white;
     }
 } */
+
+
+h1 {
+    animation: zoom 5s ease-in-out infinite;
+    animation-fill-mode: both;
+}
+@keyframes zoom {
+    0%, 100% {
+        font-size: 4vw;
+        width: 40vw;
+    }
+    98% {
+        font-size: 7vw;
+        width: 68vw;
+    }
+}
