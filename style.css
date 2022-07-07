@@ -122,25 +122,52 @@ nav > ul > li.nav-active > a, nav > ul > li > a:hover {
 section#carousel {
     height: calc(100% - 70px);
     border: 1px solid blue;
-    background: url(./images/editing/bg-4.png) no-repeat;
-    background-size: cover;
-    background-position: center;
     position: relative;
     display: flex;
     justify-content: center;
 }
-#carousel-stat {
+section#carousel div.slide {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 0;
-    border: 1px solid white;
-    width: 100px;
 }
-#carousel-stat > button {
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
+section#carousel div#slide1 {
+    background: center / cover no-repeat url(./images/editing/bg-1.png);
+    z-index: 997;
+}
+section#carousel div#slide2 {
+    background: url(./images/editing/bg-2.png) cover/center no-repeat;
+}
+section#carousel div#slide3 {
+    background: url(./images/editing/bg-3.png) cover/center no-repeat;
+}
+section#carousel div#slide4 {
+    background: url(./images/editing/bg-4.png) cover / center no-repeat;
+}
+section#carousel > div#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 998;
+}
+section#carousel > h1 {
+    position: absolute;
+    font-family: var(--site-font);
+    color: var(--white);
+    font-size: 6.4vw;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 999;
+    top: 30%;
+    color: #FFFF00;
+    margin: 0 10%;
+}
+span#cursor {
+    animation: cursorBlink 1s step-end infinite;
 }
 h2 {
     color: var(--black);
@@ -367,3 +394,19 @@ footer > section {
 /* medium screens */
 
 /* large screens */
+
+
+
+
+
+
+
+/* ANIMATION */
+@keyframes cursorBlink {
+    0%, 100% {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+}
