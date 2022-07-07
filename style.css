@@ -131,17 +131,18 @@ section#carousel div.slide {
     position: absolute;
 }
 section#carousel div#slide1 {
-    background: center / cover no-repeat url(./images/editing/bg-1.png);
+    background: center / 120% no-repeat url(./images/editing/bg-1.png);
     z-index: 997;
 }
 section#carousel div#slide2 {
-    background: url(./images/editing/bg-2.png) cover/center no-repeat;
+    background: url(./images/editing/bg-2.png) center / cover no-repeat;
+    z-index: 996;
 }
 section#carousel div#slide3 {
-    background: url(./images/editing/bg-3.png) cover/center no-repeat;
+    background: url(./images/editing/bg-3.png) center / cover no-repeat;
 }
 section#carousel div#slide4 {
-    background: url(./images/editing/bg-4.png) cover / center no-repeat;
+    background: url(./images/editing/bg-4.png) center / cover no-repeat;
 }
 section#carousel > div#overlay {
     position: absolute;
@@ -425,16 +426,46 @@ footer > section {
 
 
 h1 {
-    animation: zoom 5s ease-in-out infinite;
+    animation: zoom-h1 5s ease-in-out;
     animation-fill-mode: both;
 }
-@keyframes zoom {
-    0%, 100% {
-        font-size: 4vw;
-        width: 40vw;
+@keyframes zoom-h1 {
+    0%, 50% {
+        font-size: 0vw;
+        width: 3vw;
+        opacity: 0;
     }
-    98% {
+    90% {
+        font-size: 7.8vw;
+        width: 80vw;
+        opacity: 1;
+    }
+    100% {
         font-size: 7vw;
         width: 68vw;
+        opacity: 1;
+    }
+}
+.s-active {
+    animation: zoom-bg 3s ease-in;
+    animation-delay: 4.5s;
+    animation-fill-mode: both;
+}
+@keyframes zoom-bg {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 120%;
+    }
+}
+@keyframes disappear {
+    from {
+        opacity: 1;
+        z-index: 997;
+    }
+    to {
+        opacity: 0;
+        z-index: 994;
     }
 }
