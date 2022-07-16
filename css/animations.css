@@ -1,0 +1,61 @@
+/* span#cursor {
+    animation: cursorBlink 1s step-end infinite;
+}
+/* ANIMATION 
+@keyframes cursorBlink {
+    0%, 100% {
+        color: transparent;
+    }
+    50% {
+        color: white;
+    }
+} */
+
+
+h1 {
+    animation: zoom-h1 5s ease-in-out;
+    animation-fill-mode: both;
+}
+@keyframes zoom-h1 {
+    0%, 50% {
+        font-size: 0vw;
+        width: 3vw;
+        opacity: 0;
+    }
+    90% {
+        font-size: 7.8vw;
+        width: 80vw;
+        opacity: 1;
+    }
+    100% {
+        font-size: 7vw;
+        width: 68vw;
+        opacity: 1;
+    }
+}
+.s-active {
+    animation: zoom-bg 3s ease-in;
+    animation-delay: 4.5s;
+    animation-fill-mode: both;
+}
+@keyframes zoom-bg {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 120%;
+    }
+}
+@keyframes disappear {
+    from {
+        opacity: 1;
+        z-index: 997;
+    }
+    to {
+        opacity: 0;
+        z-index: 994;
+    }
+}  
+  
+
+  
