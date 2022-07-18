@@ -1,37 +1,7 @@
-/* Importing the base font-style for the website "inter" */
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-/* 
-    Overwriting default base style
-    setting basic, general styles for some elements
-*/
-html {
-    scroll-behavior: smooth;
-}
-html, body, nav, header, main, section, footer {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-body {
-    background: #F5EEE6;
-    overflow-x: hidden;
-}
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-    font-family: var(--site-font);
-}
-:root {
-    --site-font: 'Inter', sans-serif;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-
+/* importing styles */
+@import "./base.css";
+/* @import "./navbar.css"; */
+@import "./hero.css";
 /* all other styles go below here */
 
 /* HEADER STYLES */
@@ -54,7 +24,10 @@ nav > a > img {
     width: auto;
     height: 55px;
 }
-nav > ul {
+nav > div {
+    height: 70vw;
+}
+nav > div > ul {
     list-style: none;
     display: flex;
     gap: 30px;
@@ -63,14 +36,14 @@ nav > ul {
     width: 460px;
     height: 100%;
 }
-nav > ul > li {
+nav > div > ul > li {
     height: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     position: relative;
 }
-nav > ul hr.nav-bottom-bar {
+nav > div > ul hr.nav-bottom-bar {
     display: none;
     width: 100%;
     background: #E7A704;
@@ -78,17 +51,17 @@ nav > ul hr.nav-bottom-bar {
     position: absolute;
     bottom: 0;
 }
-nav > ul > li.nav-active > hr.nav-bottom-bar {
+nav > div > ul > li.nav-active > hr.nav-bottom-bar {
     display: block;
 }
-nav > ul a {
+nav > div > ul a {
     color: var(--white);
     font-weight: 500;
     font-size: 15.5px;
     text-transform: uppercase;
     padding: 0 10px;
 }
-nav > ul > li.nav-active > a, nav > ul > li > a:hover {
+nav > div > ul > li.nav-active > a, nav > ul > li > a:hover {
     color: #E7A704;
 }
 /* tab/ipad/medium screen width */
@@ -145,15 +118,15 @@ section#carousel div#slide1 {
     background-image: url('../images/hero-bg/bg-1.png');
 }
 section#carousel div#slide2 {
-    animation-delay: 6s;
+    animation-delay: 5s;
     background-image: url('../images/hero-bg/bg-2.png');
 }
 section#carousel div#slide3 {
-    animation-delay: 12s;
+    animation-delay: 10s;
     background-image: url('../images/hero-bg/bg-3.png');
 }
 section#carousel div#slide4 {
-    animation-delay: 18s;
+    animation-delay: 15s;
     background-image: url('../images/hero-bg/bg-4.png');
 }
 @keyframes imageAnimation {
@@ -185,6 +158,7 @@ section#carousel > div#overlay {
     z-index: 998;
 }
 section#carousel > h1 {
+    /* animation: imageAnimation 24s linear infinite 0s; */
     position: absolute;
     font-family: var(--site-font);
     color: var(--white);
@@ -196,7 +170,6 @@ section#carousel > h1 {
     top: 30%;
     color: #FFAA33;
     width: 65vw;
-    border: 1px solid red;
 }
 @media screen and (max-width: 768px) {
     header {

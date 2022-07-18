@@ -1,0 +1,33 @@
+/* Importing the base font-style for the website "inter" */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* 
+    Overwriting default base style
+    setting basic, general styles for some elements
+*/
+html {
+    scroll-behavior: smooth;
+}
+html, body, nav, header, main, section, footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #F5EEE6;
+    overflow-x: hidden;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    font-family: var(--site-font);
+}
+:root {
+    --site-font: 'Inter', sans-serif;
+    --white: #FFFFFF;
+    --black: #000000;
+}
