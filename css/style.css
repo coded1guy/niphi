@@ -2,6 +2,7 @@
 @import "./base.css";
 /* @import "./navbar.css"; */
 @import "./hero.css";
+@import "./footer.css";
 /* all other styles go below here */
 
 /* HEADER STYLES */
@@ -399,13 +400,4 @@ section#partners {
     display: none;
     flex-flow: row nowrap;
 }
-footer > section {
-    background: #484848;
-    color: var(--white);
-}
-/* Service page specific style go here */
-/* mobile/small screens */
 
-/* medium screens */
-
-/* large screens */
