@@ -77,7 +77,9 @@ header > nav > div > ul hr.nav-bottom-bar {
   display: none;
   width: 100%;
   background: #E7A704;
-  border: 2px solid #E7A704;
+  border-width: calc(2px);
+  border-style: solid;
+  border-color: #E7A704;
   position: absolute;
   bottom: 0;
 }
@@ -105,7 +107,7 @@ header > nav {
   position: sticky;
   top: 0px;
   align-items: center;
-  height: 65px;
+  height: 75px;
 }
 img#nav-logo {
   width: 60px;
@@ -116,8 +118,7 @@ header > nav > div:hover {
   margin: 0;
   right: 0;
   position: relative;
-  width: 450px;
-  border: 1px solid red;
+  width: 470px;
   height: 100%;
   transition: 0s ease-in-out;
   z-index: 999;
@@ -134,11 +135,21 @@ header > nav > div:hover {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    gap: 15px;
+    gap: 30px;
     align-items: center;
     height: 100%;
     overflow: hidden;
     transition: 0s ease-in-out;
+  }
+  header > nav > div ul li {
+    text-align: center;
+    height: 103%;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    position: relative;
+    row-gap: 15px;
   }
 }
   /* responsive design for bigger screens
