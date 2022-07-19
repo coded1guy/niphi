@@ -70,14 +70,14 @@ header > nav > div ul li {
   flex-flow: column nowrap;
   justify-content: center;
   position: relative;
-  row-gap: 15px;
-  width: 110px;
+  column-gap: 20px;
+  width: 100px;
 }
 header > nav > div > ul hr.nav-bottom-bar {
   display: none;
   width: 100%;
   background: #E7A704;
-  border-width: calc(2px);
+  border-width: 1px;
   border-style: solid;
   border-color: #E7A704;
   position: absolute;
@@ -150,6 +150,9 @@ header > nav > div:hover {
     justify-content: center;
     position: relative;
     row-gap: 15px;
+  }
+  header > nav > div > ul hr.nav-bottom-bar {
+    border-width: 2px;
   }
 }
   /* responsive design for bigger screens
