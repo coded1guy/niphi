@@ -21,7 +21,7 @@ closeMenuBtn.onclick = () => {
 
 // close the dropdown and change the menu icon to close icon when the body is clicked
 document.onclick = (e) => {
-    if(!closeMenuBtn.contains(e.target) && !openMenuBtn.contains(e.target)) {
+    if(!closeMenuBtn.contains(e.target) && !openMenuBtn.contains(e.target) && closeMenuBtn.style.display == "block") {
         openMenuBtn.style.display = "block";
         closeMenuBtn.style.display = "none";
     }

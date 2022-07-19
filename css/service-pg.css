@@ -4,3 +4,39 @@
 
 
 /* Service page styles */
+/* mobile screen */
+header > section#service-hero {
+    background-color: var(--black);
+    background: url(../images/hero-bg/service-bg.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 215px;
+    position: relative;
+}
+header > section#service-hero > div#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 98;
+}
+header > section#service-hero > h1 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    color: #FFAA33;
+    font-size: 60px;
+    display: inline-block;
+}
+
+
+/* medium screens */
+
+
+
+/* larger screens ( > 768px) */
