@@ -95,11 +95,9 @@ footer > div#copyright {
                     padding: calc(45px + 5%) 5%;
                     gap: 45px;
                 }
-                footer > section > address {
-                    width: 90%;
-                }
+                footer > section > address,
                 footer > section > div#directors {
-                    width: 160px;
+                    width: 90%;
                 }
                 footer > div#copyright {
                     text-align: center;
