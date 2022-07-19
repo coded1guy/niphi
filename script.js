@@ -18,3 +18,11 @@ closeMenuBtn.onclick = () => {
     dd.classList.add("remove-hover");
     ddList.classList.add("remove-hover");
 }
+
+// close the dropdown and change the menu icon to close icon when the body is clicked
+document.onclick = (e) => {
+    if(!closeMenuBtn.contains(e.target) && !openMenuBtn.contains(e.target)) {
+        openMenuBtn.style.display = "block";
+        closeMenuBtn.style.display = "none";
+    }
+}
