@@ -67,11 +67,45 @@ footer > div#copyright {
         }
         @media screen and (max-width: 768px) {
             footer > section {
-                padding: calc(30px + 1%) 8.2%;
+                padding: calc(30px + 3%) 8.2%;
                 font-size: 16px;
+                flex-flow: column nowrap;
+                justify-content: center;
+                gap: 40px;
+            }
+            #foot-logo {
+                align-self: center;
+            }
+            #foot-logo img {
+                width: 85px;
             }
             footer > section > address {
                 width: 400px;
+                margin: 0 auto;
+            }
+            footer > section > div#directors {
+                width: 400px;
+                margin: 0 auto;
+            }
+            footer > div#copyright {
+                padding: 10px 0;
+            }
+            @media screen and (max-width: 475px) {
+                footer > section {
+                    padding: calc(45px + 5%) 5%;
+                    gap: 45px;
+                }
+                footer > section > address {
+                    width: 90%;
+                }
+                footer > section > div#directors {
+                    width: 160px;
+                }
+                footer > div#copyright {
+                    text-align: center;
+                    padding: 15px 0;
+                    line-height: 1.5;
+                }
             }
         }
     }
