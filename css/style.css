@@ -7,10 +7,6 @@
 @import "./footer.css";
 /* all other styles go below here */
 
-/* HEADER STYLES */
-header {
-    height: calc(45vw + 80px);
-}
 
 /* MAIN - MISSION SECTION */
 section#mission {
@@ -224,9 +220,38 @@ section#our-services > div > div#service-images {
 
 /* MAIN - ABOUT SECTION */
 section#partners {
-    background: #F5F5F5;
-    padding: 6% 3%;
-    display: none;
-    flex-flow: row nowrap;
+    width: 100%;
+    background: #FFF;
+    padding: 6% 0;
+    position: relative;
 }
-
+section#partners > div {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    width: 90%;
+    margin: 0 auto;
+    gap: 25px;
+    padding: 0 15px;
+}
+section#partners > button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    background: transparent;
+    width: 30px;
+    z-index: 999;
+}
+section#partners > button > svg {
+    fill: #E7A704;
+    max-height: auto;
+    max-width: 30px;
+}
+#chevron-left {
+    left: 15px;
+}
+#chevron-right {
+    right: 15px;
+}
