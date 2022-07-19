@@ -1,3 +1,95 @@
+section#carousel {
+    height: 45vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: #000;
+}
+section#carousel div.slide {
+    animation: imageAnimation 24s linear infinite 0s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    z-index: 0;
+    color: transparent;
+    backface-visibility: hidden;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section#carousel div#slide1 {
+    background-image: url('../images/hero-bg/bg-1.png');
+}
+section#carousel div#slide2 {
+    animation-delay: 5s;
+    background-image: url('../images/hero-bg/bg-2.png');
+}
+section#carousel div#slide3 {
+    animation-delay: 10s;
+    background-image: url('../images/hero-bg/bg-3.png');
+}
+section#carousel div#slide4 {
+    animation-delay: 15s;
+    background-image: url('../images/hero-bg/bg-4.png');
+}
+@keyframes imageAnimation {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    8% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    20% {
+      opacity: 1
+    }
+    25% {
+      opacity: 0
+    }
+    100% {
+      opacity: 0
+    }
+  }
+section#carousel > div#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 98;
+}
+section#carousel > h1 {
+    /* animation: imageAnimation 24s linear infinite 0s; */
+    position: absolute;
+    font-family: var(--site-font);
+    color: var(--white);
+    font-size: 6.3vw;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 99;
+    top: 30%;
+    color: #FFAA33;
+    width: 65vw;
+}
+@media screen and (max-width: 768px) {
+    header {
+        height: calc(50vw + 80px);
+    }
+    section#carousel {
+        height: calc(50vw + 20px);
+    }
+    @media screen and (max-width:650px) {
+        section#carousel {
+            height: calc(45vw + 10px);
+        }
+    }
+}
 
 
 

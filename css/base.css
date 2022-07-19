@@ -52,3 +52,8 @@ p {
     font-weight: 500;
     color: var(--black);
 }
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
