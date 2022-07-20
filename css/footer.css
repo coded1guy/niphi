@@ -29,11 +29,11 @@ footer > section > address > div > div {
     gap: 20px;
     align-items: flex-start;
 }
-footer > section > address > div > div > span, #directors {
-    color: var(--white);
+footer > section > address > div > div > span, #directors, a[href^="tel"] {
+    color: var(--white) !important;
 }
 footer > section > address > div > div > span > span {
-    color: inherit;
+    color: #fff !important;
     text-decoration: none;
 }
 footer > section > address > div > div > img.icon.l {
