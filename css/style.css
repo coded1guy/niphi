@@ -88,7 +88,7 @@ section#about h2, section#about p {
                     text-align: center;
                 }
                 section#about p {
-                    text-align: center;
+                    text-align: justify;
                 }
                 section#about > article {
                     display: flex;
@@ -123,6 +123,9 @@ section#about h2, section#about p {
 /* mobile screen */
 section#our-services {
     padding: 14% 5%;
+}
+section#our-services h2 {
+    margin-bottom: 0px;
 }
 section#our-services > div {
     padding-top: 20px;
@@ -228,7 +231,7 @@ section#partners {
 section#partners > div {
     display: flex;
     flex-flow: row nowrap;
-    overflow: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
     width: 90%;
     margin: 0 auto;
@@ -236,6 +239,7 @@ section#partners > div {
     padding: 0 15px;
 }
 section#partners > button {
+    display: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -254,4 +258,12 @@ section#partners > button > svg {
 }
 #chevron-right {
     right: 25px;
+}
+@media screen and (min-width: 500px) {
+    section#partners > div {
+        overflow: hidden;
+    }
+    section#partners > button {
+        display: block;
+    }
 }
