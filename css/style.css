@@ -109,7 +109,7 @@ section#about h2, section#about p {
                     section#about {
                         padding: 0;
                         gap: 7%;
-                        height: 115vh;
+                        height: 100vh;
                     }
                     section#about img {
                         width: 84%;
