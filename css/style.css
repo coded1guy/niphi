@@ -12,6 +12,9 @@
 section#mission {
     padding: 5.5% 12%;
 }
+section#mission > p {
+    text-align: center;
+}
 /* tab/ipad/medium screen width */
 @media screen and (max-width:768px) {
     section#mission {
@@ -21,6 +24,9 @@ section#mission {
     @media screen and (max-width:425px) {
         section#mission {
             padding: 13% 6%;
+        }
+        section#mission > p {
+            text-align: justify;
         }
     }
 }
