@@ -8,7 +8,7 @@
 /* mobile screen */
 header > section#service-hero {
     background-color: var(--black);
-    background: url(../images/hero-bg/service-bg.png) no-repeat;
+    background: url(../images/hero-bg/service-bg.webp) no-repeat;
     background-size: cover;
     background-position: center;
     height: 250px;
